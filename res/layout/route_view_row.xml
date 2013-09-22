@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="65dip" >
+
+    <ImageView
+        android:id="@+id/route_view_row_turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="65dip"
+        android:layout_toRightOf="@id/route_view_row_turn" >
+
+        <com.mapabc.android.activity.base.NextRoadView
+            android:id="@+id/route_view_row_start_view"
+            style="@style/route_info_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="出发地点" />
+
+        <RelativeLayout
+            android:id="@+id/route_view_row_disandrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/route_view_row_dis"
+                style="@style/route_info_dis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="0.0m" />
+
+            <ImageView
+                android:id="@+id/route_view_row_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/route_view_row_dis"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/arrow" />
+        </RelativeLayout>
+
+        <com.mapabc.android.activity.base.NextRoadView
+            android:id="@+id/route_view_row_end_view"
+            style="@style/route_info_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dip"
+            android:layout_toRightOf="@id/route_view_row_disandrow"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="到达地点" />
+    </RelativeLayout>
+
+</RelativeLayout>

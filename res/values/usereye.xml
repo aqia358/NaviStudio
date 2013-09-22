@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="limitSpeed">
+        <item>监控摄像头</item>
+        <item>限速摄像头 20km</item>
+        <item>限速摄像头 30km</item>
+        <item>限速摄像头 40km</item>
+        <item>限速摄像头 50km</item>
+        <item>限速摄像头 60km</item>
+        <item>限速摄像头 70km</item>
+        <item>限速摄像头 80km</item>
+        <item>限速摄像头 90km</item>
+        <item>限速摄像头 100km</item>
+        <item>限速摄像头 110km</item>
+        <item>限速摄像头 120km</item>
+    </string-array>
+    
+   <string-array name="usereyetype">
+       <item >闯红灯超速照相</item>
+       <item >固定式超速照相</item>
+       <item >移动式雷达出没路段</item>
+       <item >高架桥上测速</item>
+       <item >区间测速</item>
+       <item >手持拍照取缔路段</item>
+       <item >数位录影取缔路段</item>
+       <item >雷射三脚架取缔路段</item>
+       <item >闯平交道超速照相</item>
+       <item >闸道口超速照相</item>
+       <item >速限变换</item>
+       <item >电子监控路段</item>
+       <item >禁止变换车道</item>
+       <item >易肇事路段</item>
+       <item >加油站请检查油表</item>
+       <item >收费站</item>
+       <item >休息站</item>
+       <item >隧道口</item>
+       <item >全天候开头灯路段</item>
+       <item >连续弯道路段</item>
+       <item >多雾路段</item>
+       <item >险升坡</item>
+       <item >险降坡</item>
+       <item >路面颠簸</item>
+       <item >小心落石</item>
+       <item >道路缩减</item>
+       <item >路滑</item>
+       <item >当心行人</item>
+       <item >交流道</item>
+       <item >机场</item>
+   </string-array>
+   <string-array name="usereyetypeid">
+       <item >1</item>
+       <item >11</item>
+       <item >23</item>
+       <item >34</item>
+       <item >45</item>
+       <item >50</item>
+       <item >55</item>
+       <item >60</item>
+       <item >65</item>
+       <item >70</item>
+       <item >75</item>
+       <item >81</item>
+       <item >83</item>
+       <item >93</item>
+       <item >107</item>
+       <item >108</item>
+       <item >109</item>
+       <item >110</item>
+       <item >113</item>
+       <item >118</item>
+       <item >122</item>
+       <item >125</item>
+       <item >126</item>
+       <item >130</item>
+       <item >133</item>
+       <item >136</item>
+       <item >150</item>
+       <item >155</item>
+       <item >162</item>
+       <item >168</item>
+   </string-array>
+</resources>

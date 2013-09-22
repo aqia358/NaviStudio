@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/gpMenu" android:visible="true" android:enabled="true" android:menuCategory="system">
+        <item android:id="@+id/menu_itemRouteManager" android:title="@string/menu_routeManager" android:icon="@drawable/menu_icon_route"></item>
+    </group>
+</menu>

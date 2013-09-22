@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  	<include layout="@layout/common_menu_header" 
+	    android:id="@+id/editpoiinfoheaderlayout"
+		android:layout_height="wrap_content" 
+		android:layout_width="match_parent" />
+  <RelativeLayout
+        android:id="@+id/editpoiinfobodylayout"
+        android:layout_below="@id/editpoiinfoheaderlayout"
+  		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:orientation="vertical"
+		>
+  			<TextView android:layout_width="fill_parent"
+					  android:layout_height="wrap_content"
+					  android:gravity="center"
+					  android:id="@+id/tv_editpoiinfo_poi_name" 
+					  style="@style/common_style_for_20dip"/>
+    			<TextView android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_marginLeft="10dip"
+					  android:id="@+id/tv_editpoiinfo_poi_tel_title" 
+					  android:layout_below="@id/tv_editpoiinfo_poi_name"
+					  android:text="@string/searchpoiresult_strTel"
+					  style="@style/common_style_for_20dip"/>
+		    	<EditText android:layout_width="fill_parent"
+					  android:layout_height="wrap_content"
+					  android:maxLength="38"
+					  android:layout_marginLeft="25dip"
+					  android:layout_marginRight="25dip"
+				      android:layout_centerHorizontal="true"
+					  android:id="@+id/et_editpoiinfo_poi_tel_info" 
+					  android:layout_below="@id/tv_editpoiinfo_poi_tel_title"/>
+				<TextView android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_alignLeft="@id/tv_editpoiinfo_poi_tel_title"
+					  android:layout_gravity="left"
+					  android:id="@+id/tv_editpoiinfo_poi_address_title" 
+					  android:layout_below="@id/et_editpoiinfo_poi_tel_info"
+					  android:text="@string/searchpoiresult_strAddr"
+					  style="@style/common_style_for_20dip"/>
+			    <EditText android:layout_width="fill_parent"
+					  android:layout_height="wrap_content"
+					  android:maxLength="64"
+					  android:maxLines="5"
+					  android:layout_alignLeft="@id/et_editpoiinfo_poi_tel_info"
+					  android:layout_alignRight="@id/et_editpoiinfo_poi_tel_info"
+				      android:layout_centerHorizontal="true"
+					  android:id="@+id/et_editpoiinfo_poi_address_info" 
+					  android:layout_below="@id/tv_editpoiinfo_poi_address_title"/>
+				<Button 
+				      android:layout_width="100dip"
+					  android:layout_height="wrap_content"
+				      android:id="@+id/bt_editpoiinfo_poi_btn_save"
+				      android:layout_centerHorizontal="true"
+				      android:layout_below="@id/et_editpoiinfo_poi_address_info"
+				      android:text="@string/editpoiinfo_upload"/>
+  </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_mapview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 主地图 -->
+
+    <View
+        android:id="@+id/v_mapsview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <!-- 导航指引层 -->
+
+    <FrameLayout
+        android:id="@+id/fl_navilayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- 路口放大图 -->
+
+        <RelativeLayout
+            android:id="@+id/ll_crossinglayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <View
+                android:id="@+id/view_crossing"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+                <!--<LinearLayout android:layout_width="fill_parent" 
+					android:layout_height="wrap_content" 
+					android:layout_below="@id/view_crossing"
+					android:layout_alignParentLeft="true">
+			 		<ImageView android:id="@+id/iv_crossing_lane" 
+			 		   android:layout_marginTop="400px"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"/>
+			
+				</LinearLayout>
+        --></RelativeLayout>
+       
+        <!-- 指引信息 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+            android:id="@+id/rl_navinfo">
+
+            <!-- 主界面顶部的状态栏 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_mapbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/navistudio_roadname_land_day"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <!-- GPS信号 -->
+
+                <ImageButton
+                    android:id="@+id/ib_gpsstate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="1dip"
+                    android:layout_marginRight="1dip"
+                    android:background="@drawable/navistudio_gps_0_x" />
+
+                <ImageButton
+                    android:id="@+id/ib_navi_remain_dis_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/ib_gpsstate"
+                    android:background="@drawable/navistudio_remaindis_km"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_navi_remain_dis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/ib_navi_remain_dis_unit"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18dip"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+                <com.mapabc.android.activity.base.NextRoadView
+                    android:id="@+id/tv_navi_next_road"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_toLeftOf="@id/tv_navi_remain_dis"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:freezesText="true"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="24dip" />
+            </RelativeLayout>
+            <!-- 转向 -->
+            <LinearLayout
+                android:id="@+id/ll_navi_turn_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/rl_mapbar"
+                android:background="@drawable/navistudio_direct_port_day"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <!-- 转向标志 -->
+
+                <ImageView
+                    android:id="@+id/iv_navi_turn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+                <!-- 路段剩余距离 -->
+
+                <TextView
+                    android:id="@+id/tv_navi_turn_dis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!-- 无放大路口时的车道 -->
+			<ImageView android:id="@+id/iv_no_crossing_lane" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_toRightOf="@id/ll_navi_turn_layout"
+					android:layout_below="@id/rl_mapbar" 
+					android:visibility="gone"/>
+            <!-- 摄像头 -->
+
+            <ImageView
+                android:id="@+id/iv_navi_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/ll_navi_turn_layout"
+                android:layout_marginTop="1dip"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_navi_overspeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/iv_navi_camera"
+                android:layout_marginTop="1dip"
+                android:visibility="gone" />
+          <!-- 视图模式按钮 -->
+          <ImageButton
+                android:id="@+id/ib_map_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/rl_mapbar"
+                android:layout_marginRight="2dip"
+                android:layout_marginTop="2dip"
+                android:background="#00000000" />
+            <!-- 速度显示 -->
+
+            <TextView
+                android:id="@+id/tv_navi_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/navistudio_speed_day"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="18dip"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+    <!-- 操作层 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_operatelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- 放大缩小 -->
+
+        <LinearLayout
+            android:id="@+id/ll_zoomlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/ib_btnZoomIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/navistudio_zoomin_day" />
+
+            <ImageButton
+                android:id="@+id/ib_btnZoomOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/navistudio_zoomout_day" />
+        </LinearLayout>
+        <!-- 声音 -->
+
+        <ImageButton
+            android:id="@+id/ib_btn_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/navistudio_volume" />
+        <!-- 比例尺 -->
+
+        <TextView
+            android:id="@+id/tv_scale_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ib_btn_volume"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/navistudio_scale_icon"
+            android:gravity="center|top"
+            android:text="100m"
+            android:textColor="@color/black"
+            android:textSize="12dip" />
+        <!-- 返回车位 -->
+
+        <ImageButton
+            android:id="@+id/ib_btn_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_scale_num"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dip"
+            android:background="@drawable/navistudio_carbutton_day"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/operatelayout" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+		    <!-- 当前点和设置目的地 -->
+			<LinearLayout android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:layout_alignParentBottom="true"
+					android:layout_marginRight="5dip"
+					android:layout_centerHorizontal="true"
+					android:orientation="horizontal">
+					<ImageButton android:id="@+id/btn_current_position" 
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+						android:background="@drawable/currentpoint_day"/>
+					<ImageButton android:id="@+id/btn_calculate" 
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+						android:background="@drawable/extra_day"
+						android:visibility="gone" />
+		    </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

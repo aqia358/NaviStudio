@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout 
+    	android:id="@+id/crossing_view_layout" 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent" 
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	>
+    	<include layout="@layout/searchlocationheader" 
+    	android:id="@+id/crossing_view_title"
+		android:layout_height="wrap_content" 
+		android:layout_width="match_parent" />
+        <LinearLayout 
+        	android:layout_height="fill_parent" 
+        	android:layout_width="wrap_content" 
+        	android:id="@+id/crossing_view_linearlayout">
+        </LinearLayout>
+        <View 
+        	android:id="@+id/crossing_view_map" 
+        	android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+        	android:layout_below="@id/crossing_view_linearlayout"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentBottom="true"
+        	>
+        </View>
+        <LinearLayout 
+            android:layout_below="@id/crossing_view_title"
+            android:layout_marginTop="10dp"
+			android:layout_gravity="right"
+			android:orientation="vertical"
+			android:id="@+id/ctrl_crossing_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			>
+			<Button
+				android:layout_gravity="right"
+				android:id="@+id/crossing_view_up"
+				android:paddingTop="20.0dip"
+				android:paddingBottom="20.0dip"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="上一路口"
+				/>
+			<Button
+				android:layout_gravity="right"
+				android:id="@+id/crossing_view_down"
+				android:paddingTop="20.0dip"
+				android:paddingBottom="20.0dip"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="下一路口"
+				/>
+		</LinearLayout>
+		<RelativeLayout
+		  android:id="@+id/crossing_info_layout" 
+    	  android:layout_width="120dip" 
+    	  android:layout_height="wrap_content"
+    	  android:layout_alignParentRight="true"
+    	  android:layout_alignParentBottom="true"
+    	  android:layout_margin="5dip"
+    	  android:background="@drawable/crossing_desc">
+		 <ImageView android:id="@+id/crossing_image"
+					android:layout_width="wrap_content" android:singleLine="true"
+					android:layout_height="wrap_content" 
+					android:layout_below="@id/crossing_image" 
+					android:layout_centerHorizontal="true"/>
+    	  <TextView android:id="@+id/crossing_start" android:text="西四环北路" 
+					android:layout_width="wrap_content" android:singleLine="true"
+					android:layout_height="wrap_content" 
+					android:layout_below="@id/crossing_image" 
+					style="@style/crossing_route_desc"/>
+		  <TextView android:text="西四环北路" android:id="@+id/crossing_end"
+					android:layout_width="wrap_content"  android:singleLine="true"
+					android:layout_height="wrap_content" android:layout_below="@id/crossing_start" 
+					style="@style/crossing_route_desc"/>
+	      <TextView android:text="当前路段:2km" android:id="@+id/crossing_count"
+					android:layout_width="wrap_content"  android:singleLine="true"
+					android:layout_height="wrap_content" android:layout_below="@id/crossing_end"
+					style="@style/crossing_dis_desc"/>
+	      <TextView android:text="剩余距离:20km" android:id="@+id/crossing_remain"
+					android:layout_width="wrap_content"  android:singleLine="true"
+					android:layout_height="wrap_content" android:layout_below="@id/crossing_count"
+					style="@style/crossing_dis_desc"/>
+    	  </RelativeLayout>
+    </RelativeLayout>

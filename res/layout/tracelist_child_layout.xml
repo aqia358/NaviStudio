@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="match_parent"
+  android:gravity="center_horizontal"
+  >
+  	<Button android:layout_height="wrap_content" android:layout_width="90dip"
+  	    		 android:text="预览" 
+  	    		 android:id="@+id/btn_preview"
+  	    		 android:layout_marginLeft="10px"
+  	    		 android:layout_marginTop="5px"/>
+  	<Button android:layout_height="wrap_content" android:layout_width="90dip"
+  	   			 android:text="回放" 
+  	   			 android:id="@+id/btn_comeback"
+  	   			 android:layout_marginLeft="20px"
+  	   			 android:layout_marginTop="5px"/>
+  	<Button android:layout_height="wrap_content" android:layout_width="90dip"
+  	    		 android:text="删除" 
+  	    		 android:id="@+id/btn_delete"
+  	    		 android:layout_marginLeft="20px"
+  	    		 android:layout_marginTop="5px"/>
+	
+</LinearLayout>

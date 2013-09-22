@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView01"  
+    android:layout_width="wrap_content" android:layout_height="wrap_content"  
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:scrollbars="vertical">  
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+  <include layout="@layout/common_menu_header" 
+		android:layout_height="wrap_content" 
+		android:layout_width="match_parent" />
+  <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/tv_about_autonavi_group"
+    android:text="@string/aboutautonavi_group"
+    style="@style/common_style_for_20dip"
+  />
+  <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/tv_about_autonavi_name"
+    android:text="@string/aboutautonavi_name"
+    style="@style/common_style_for_20dip"
+  />
+  <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/tv_about_autonavi_cpname"
+    android:text="@string/aboutautonavi_cpname"
+    style="@style/common_style_for_20dip"
+  />
+  <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/tv_about_autonavi_shenTu"
+    android:text="@string/aboutautonavi_shenTu"
+    style="@style/common_style_for_20dip"
+  />
+  <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/tv_about_autonavi_softnum"
+    android:text="@string/aboutautonavi_softnum"
+    style="@style/common_style_for_20dip"
+  />
+  <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/tv_about_autonavi_drivenum"
+    android:text="@string/aboutautonavi_drivenum"
+    style="@style/common_style_for_20dip"
+  />
+  <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/tv_about_autonavi_datanum"
+    android:text="@string/aboutautonavi_datanum"
+    style="@style/common_style_for_20dip"
+  />
+  <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/tv_about_autonavi_author"
+    android:text="@string/aboutautonavi_author"
+    style="@style/common_style_for_20dip"
+  />
+  <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/tv_about_autonavi_desc"
+    android:text="@string/aboutautonavi_desc"
+  />
+</LinearLayout>
+</ScrollView> 

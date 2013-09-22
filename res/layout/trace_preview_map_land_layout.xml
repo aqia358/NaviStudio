@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_mapview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 主地图 -->
+
+    <View
+        android:id="@+id/v_mapsview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <!-- 导航指引层 -->
+
+    <FrameLayout
+        android:id="@+id/fl_navilayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+
+        <!-- 指引信息 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_navilayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <!-- 视图按钮 -->
+            <ImageButton
+                android:id="@+id/trace_ib_map_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/rl_mapbar"
+                android:layout_marginRight="2dip"
+                android:layout_marginTop="2dip"
+                android:background="#00000000" />
+        </RelativeLayout>
+    </FrameLayout>
+    <!-- 操作层 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_operatelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+          <!-- 返回车位 -->
+
+        <ImageButton
+            android:id="@+id/ib_btn_car_trace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dip"
+            android:background="@drawable/navistudio_carbutton_day" />
+
+        <!-- 放大缩小 -->
+
+        <LinearLayout
+            android:id="@+id/ll_zoomlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/ib_btnZoomIn_trace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/navistudio_zoomin_day" />
+
+            <ImageButton
+                android:id="@+id/ib_btnZoomOut_trace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/navistudio_zoomout_day" />
+        </LinearLayout>
+        <!-- 比例尺 -->
+        <TextView
+            android:id="@+id/tv_scale_num_trace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/navistudio_scale_icon"
+            android:gravity="center|top"
+            android:text="100m"
+            android:textColor="@color/black"
+            android:textSize="12dip" />
+    </RelativeLayout>
+
+</FrameLayout>

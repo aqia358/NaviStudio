@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="routemanagername" >
+    	<item name="android:textStyle">bold</item>
+		<item name="android:textSize">20dip</item>
+		<item name="android:textColor">#FFFFFF</item>
+	</style>
+	<style name="routemanagerdesc" >
+		<item name="android:textSize">18dip</item>
+		<item name="android:textColor">@color/color_gray</item>
+	</style>
+		<style name="otherfunctionname" >
+		<item name="android:textSize">20dip</item>
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+		<style name="settingforlikename" >
+		<item name="android:textSize">20dip</item>
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<style name="settingforlikestate" >
+		<item name="android:textSize">15dip</item>
+		<item name="android:textColor">@color/color_gray</item>
+	</style>
+	<style name="child_text_size" >
+		<item name="android:textSize">20dip</item>
+		<item name="android:textColor">#FFFFFF</item>
+	</style>
+	<style name="poi_name" >
+	    <item name="android:textStyle">bold</item>
+		<item name="android:textSize">20dip</item>
+		<item name="android:textColor">#FFFFFF</item>
+	</style>
+	<style name="poi_attr" >
+		<item name="android:textSize">20dip</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">#FFFFFF</item>
+	</style>
+	<style name="category_name" parent="district_name">
+	</style>
+	<style name="poi_detail_addr" >
+		<item name="android:textSize">16dip</item>
+		<item name="android:textColor">@color/color_gray</item>
+	</style>
+	<style name="result_count" >
+		<item name="android:textSize">16dip</item>
+		<item name="android:textColor">#FFFFFF</item>
+	</style>
+	<style name="route_info_desc" >
+		<item name="android:textSize">17dip</item>
+		<item name="android:textColor">#FFFFFF</item>
+	</style>
+	<style name="route_info_dis" >
+		<item name="android:textSize">12dip</item>
+		<item name="android:textColor">#FFFFFF</item>
+	</style>
+	<style name="crossing_route_desc" >
+		<item name="android:textSize">17dip</item>
+		<item name="android:textColor">#000000</item>
+	</style>
+		<style name="crossing_dis_desc" >
+		<item name="android:textSize">14dip</item>
+		<item name="android:textColor">#000000</item>
+	</style>
+</resources>

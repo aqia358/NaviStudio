@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mapabc.android.activity"
+    android:versionCode="2"
+    android:versionName="2.1" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application
+        android:name="com.mapabc.android.activity.base.NaviStudioApplication"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:persistent="true" >
+        <activity
+            android:name=".AutoNaviStartActicity"
+            android:label="@string/app_name" 
+            android:theme="@style/notitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AutoNaviSplashActicity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.AutoNaviSplashActicity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AutoNaviLogoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.AutoNaviLogoActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NaviStudioActivity"
+            android:allowTaskReparenting="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.NaviStudioActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".setting.OtherFunctionActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.setting.OtherFunctionActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".route.track.TraceListActivity"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.route.track.TraceListActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GPSInfoActivity"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.GPSInfoActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".setting.SettingForLikeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.setting.SettingForLikeActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".setting.SettingMapActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.setting.SettingMapActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".setting.SettingRouteActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.setting.SettingRouteActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".setting.SettingTrafficRadioActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.setting.SettingTrafficRadioActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".setting.AboutAutonaviActivity"
+            android:allowTaskReparenting="false"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/txtSearchResult"
+            android:taskAffinity="com.mapabc.activity.MainTask"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.setting.AboutAutonaviActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".route.RouteManagerActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.route.RouteManagerActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".search.SearchLocationActivity"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.search.SearchLocationActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".search.MyFavoritesActivity"
+            android:label="@string/txtSearchResult"
+            android:launchMode="singleTask"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.search.MyFavoritesActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".search.SearchPOIByFirstAlphaBetActivity"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.search.SearchPOIByFirstAlphaBetActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".search.ChooseCityActivity"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.search.ChooseCityActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".search.result.SearchResultFirstAlphaBetActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.search.SearchResultFirstAlphaBetActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".search.SearchPOIByKeyWordActivity"
+            android:allowTaskReparenting="true"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.search.SearchPOIByKeyWordActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".search.result.SearchResultOfKeyWordActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.search.SearchResultOfKeyWordActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".route.GlanceRouteActivity"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.route.GlanceRouteActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".route.RouteDescriptionActivity"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.route.RouteDescriptionActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".search.SearchAroundPOIActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.search.SearchAroundPOIActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".search.EditPOIInfoActivity"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.search.EditPOIInfoActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".route.CrossingViewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.route.CrossingViewActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".search.result.SearchAroundResultActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.search.SearchAroundResultActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".search.SearchUserEyeActivity"
+            android:label="@string/txtSearchResult"
+            android:launchMode="singleTask"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.search.SearchUserEyeActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".route.track.TrackManagerActivity"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.route.track.TrackManagerActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".route.track.TracePreviewActivity"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.route.track.TracePreviewActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".route.track.TraceActivity"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.route.track.TraceActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".route.track.TracePlayBackActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.route.track.TracePlayBackActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".search.EditUserEyeActivity"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.search.EditUserEyeActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+
+        <!-- 位置通交互式导航模块 -->
+        <activity
+            android:name=".wzt.WZTActivity"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.wzt.WZTActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wzt.ServiceInfoActivity"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.wzt.ServiceInfoActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wzt.TaskListActivity"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.wzt.TaskListActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wzt.AreaAlarmActivity"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.wzt.AreaAlarmActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wzt.SpeedCallActivity"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.wzt.SpeedCallActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wzt.UploadRuleActivity"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.wzt.UploadRuleActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wzt.LineAlarmActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/txtSearchResult"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.wzt.LineAlarmActivity" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+        </activity>
+        <!-- *****来电监听器******* -->
+        <receiver android:name=".listener.PhoneStatReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".NaviResultListActivity"
+            android:label="@string/title_activity_navi_result_list"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="com.mapabc.android.activity.NaviResultListActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" >
+    </uses-permission>
+
+</manifest>

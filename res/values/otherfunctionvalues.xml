@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="otherfunctionitems">
+        <item>地图设置</item>
+        <item>导航设置</item>
+        <item>其他设置</item>
+        <item>帮助</item>
+        <item>关于</item>
+        <item>退出导航</item>
+    </string-array>
+    <string-array name="settingforlikeitems">
+        <item>道路方向提示开关</item>
+        <item>视图模式</item>
+        <item>昼夜模式</item>
+        <item>省电模式</item>
+        <item>模拟时速</item>
+        <item>自动回车位</item>
+        <item>语音开关</item>
+        <item>超速报警开关</item>
+        <item>语音类别</item>
+        <item>电子眼开关</item>
+        <item>地图配色</item>
+    </string-array>
+    <string-array name="settingformap">
+        <item>视图模式</item>
+        <item>昼夜模式</item>
+        <item>省电模式</item>
+        <item>自动回车位</item>
+        <item>地图配色</item>
+    </string-array>
+    <string-array name="settingforroute">
+        <item>道路方向提示开关</item>
+        <item>模拟时速</item>
+        <item>语音开关</item>
+        <item>超速报警开关</item>
+        <item>语音类别</item>
+        <item>电子眼开关</item>
+    </string-array>
+    <string-array name="settingfortrafficradio"><!--
+        <item>前方路况播报</item>
+        <item>周边路况播报</item>
+        --><item>软件升级开关</item>
+    </string-array>
+    <string-array name="fontitem">
+        <item>大</item>
+        <item>中</item>
+        <item>小</item>
+    </string-array>
+    <string-array name="prioritypoiitem">
+        <item>加油站</item>
+        <item>停车场</item>
+        <item>餐厅</item>
+        <item>住宿</item>
+        <item>娱乐</item>
+        <item>景点</item>
+        <item>医院</item>
+    </string-array>
+    <string-array name="displaymodelitem">
+        <item>北首朝上</item>
+        <item>车首朝上</item>
+        <item>3D模式</item>
+    </string-array>
+    <string-array name="mapdetaileddegreeitem">
+        <item>详细</item>
+        <item>一般</item>
+        <item>简单</item>
+    </string-array>
+    <string-array name="dayornightitem">
+        <item>白天</item>
+        <item>黑夜</item>
+        <item>自动</item>
+    </string-array>
+    <string-array name="demospeeditem">
+        <item>低速</item>
+        <item>中速</item>
+        <item>高速</item>
+    </string-array>
+    <string-array name="voicetypeitem">
+        <item>普通话</item>
+        <item>粤语</item>
+        <item>四川话</item>
+        <item>东北话</item>
+        <item>台湾话</item>
+        <item>湖南话</item>
+        <item>河南话</item>
+    </string-array>
+    <string-array name="voicehelprateitem">
+        <item>一般</item>
+        <item>频繁</item>
+    </string-array>
+    <string-array name="mapcoloritem">
+        <item>爪黄飞电</item>
+        <item>赤炭火龙</item>
+    </string-array>
+    <string-array name="backgroundlightitem">
+        <item>自动</item>
+        <item>常亮</item>
+    </string-array>
+    <string-array name="stateitem">
+    <item>已关</item>
+    <item>已开</item>
+    </string-array>
+    <string-array name="naviresultitems">
+        <item>速度最快</item>
+        <item>费用最少</item>
+        <item>距离最短</item>
+        <item>不走高速</item>
+        <item>国道优先</item>
+        <item>省道优先</item>
+    </string-array>
+</resources>

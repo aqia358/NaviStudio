@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent" 
+	android:background="@drawable/common_menu_head_bg">
+	<TableLayout android:layout_height="wrap_content"
+		android:stretchColumns="2" android:layout_width="fill_parent"
+		android:layout_alignParentLeft="true" android:id="@+id/tableLayout1">
+		<TableRow android:baselineAligned="false" android:id="@+id/tableRow1"
+			android:layout_width="match_parent" android:layout_height="wrap_content">
+			<ImageButton android:src="@drawable/settingforlike_bg_reset" android:layout_alignParentTop="true"
+					android:layout_toLeftOf="@id/tv_topic" 
+					android:layout_width="match_parent" android:layout_height="wrap_content"
+					android:id="@+id/ib_reset" android:background="@android:color/transparent" android:layout_gravity="center_vertical"></ImageButton>
+			<TextView android:text="TextView" android:layout_width="wrap_content"
+				android:id="@+id/tv_topic" android:layout_gravity="center"
+				android:layout_column="2" android:layout_height="wrap_content"
+				android:textSize="30dip"></TextView>
+			<ImageButton android:src="@drawable/common_menu_head_button_back" android:layout_alignParentTop="true"
+					android:layout_toRightOf="@id/tv_topic"
+					android:layout_width="match_parent" android:layout_height="wrap_content"
+					android:id="@+id/ib_menu_back" android:background="@android:color/transparent" android:layout_gravity="center_vertical"></ImageButton>
+		</TableRow>
+	</TableLayout>
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="routemanager_items">
+        <item>开始模拟导航</item>
+        <item>删除当前路径</item>
+        <item>轨迹管理</item>
+        <!--<item>交互式导航</item>-->
+    </string-array>
+    <string-array name="routemanager_desc_items">
+        <item>按照您设定的路径开始模拟导航</item>
+        <item>删除当前路径后可重新规划</item>
+        <item>操作及设置轨迹相关内容</item>
+       <!-- <item>通过网络与导航终端进行数据交互</item>-->
+    </string-array>
+    <string-array name="routemanager_routeplan_way">
+    	<item>最佳路线</item>
+		<item>高速优先</item>
+		<item>最短路线</item>
+		<item>少走高速</item>
+    </string-array>
+    <string-array name="routemanager_netrouteplan_way">
+    	<item>速度优先</item>
+		<item>费用优先</item>
+		<item>距离优先</item>
+		<item>TMC耗油最少</item>
+		<item>TMC最快</item>
+		<item>不走快速路</item>
+		<item>国道优先</item>
+		<item>省道优先</item>
+    </string-array>
+    <string name="crosing_title">路口详情</string>
+    <string name="routemanager_simnaviname">停止模拟导航</string>
+    <string name="routemanager_simnavidesc">停止正在执行的模拟导航</string>
+    <string name="routemanager_isdisplaytrack">是否显示轨迹</string>
+    <string name="routemanager_trackrule">记录密度设置</string>
+    
+    <string-array name="trackmanager_yesno">
+        <item >是</item>
+        <item >否</item>
+    </string-array>
+        <string-array name="trackmanager_trackrule">
+        <item >低密度(50米间隔)</item>
+        <item >中密度(20米间隔)</item>
+        <item >高密度(10米间隔)</item>
+    </string-array>
+        
+    <string-array name="trackmanager_items">
+        <item>轨迹列表</item>
+        <item>记录密度设置</item>
+        <item>开始记录轨迹</item>
+        <item>轨迹显示设置</item>
+    </string-array>
+    <string name="trackmanager_stoprecord">停止记录轨迹</string>
+    <string name="trackmanager_startrecord">开始记录轨迹</string>
+    <string name="trackmanager_title">轨迹管理</string>
+</resources>

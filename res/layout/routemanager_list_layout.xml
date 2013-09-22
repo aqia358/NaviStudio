@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<LinearLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="70dip"
+			android:orientation="vertical">
+			<TextView android:layout_width="wrap_content"
+					  android:layout_height="35dip"
+                      android:layout_marginTop="8dip"
+                      android:layout_marginLeft="8dip"
+					  android:id="@+id/tv_list_name" 
+					  style="@style/common_style_for_20dip"/>
+			<TextView android:layout_width="wrap_content"
+					  android:layout_height="30dip"
+					  android:layout_marginTop="1dip"
+					  android:id="@+id/tv_list_desc" 
+					  android:layout_marginLeft="8dip"
+					  style="@style/common_style_for_18dip"/>
+</LinearLayout>

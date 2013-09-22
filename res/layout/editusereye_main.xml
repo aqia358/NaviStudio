@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  	<include layout="@layout/common_menu_header" 
+	    android:id="@+id/rl_editusereyeheaderlayout"
+		android:layout_height="wrap_content" 
+		android:layout_width="match_parent" />
+  <RelativeLayout
+        android:id="@+id/rl_editusereyebodylayout"
+        android:layout_below="@id/rl_editusereyeheaderlayout"
+  		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		>
+    			<TextView android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_marginLeft="10dip"
+					  android:id="@+id/tv_editusereye_name_title" 
+					  android:text="@string/editusereye_name"
+					  style="@style/otherfunctionname"/>
+		    	<EditText android:layout_width="fill_parent"
+					  android:layout_height="wrap_content"
+					  android:layout_marginLeft="25dip"
+					  android:layout_marginRight="25dip"
+					  android:maxLength="16"
+				      android:layout_centerHorizontal="true"
+					  android:id="@+id/et_editusereye_name" 
+					  android:layout_below="@id/tv_editusereye_name_title"/>
+		    	
+				<TextView android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_alignLeft="@id/tv_editusereye_name_title"
+					  android:layout_gravity="left"
+					  android:id="@+id/tv_editusereye_type_title" 
+					  android:layout_below="@id/et_editusereye_name"
+					  android:text="@string/editusereye_type"
+					  style="@style/otherfunctionname"/>
+			    <Spinner android:id="@+id/spinner_editusereye_type"
+			          android:layout_width="wrap_content"
+				      android:layout_height="wrap_content"
+                      android:layout_alignLeft="@id/et_editusereye_name"
+					  android:layout_alignRight="@id/et_editusereye_name"
+					  android:layout_below="@id/tv_editusereye_type_title"/>
+			    
+			    <TextView android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_alignLeft="@id/tv_editusereye_type_title"
+					  android:layout_gravity="left"
+					  android:id="@+id/tv_editusereye_speed_title" 
+					  android:layout_below="@id/spinner_editusereye_type"
+					  android:text="@string/editusereye_speed"
+					  style="@style/otherfunctionname"/>
+			    <Spinner android:id="@+id/spinner_editusereye_speed"
+			          android:layout_width="wrap_content"
+				      android:layout_height="wrap_content"
+                      android:layout_alignLeft="@id/spinner_editusereye_type"
+					  android:layout_alignRight="@id/spinner_editusereye_type"
+					  android:layout_below="@id/tv_editusereye_speed_title"/>
+			    
+			    <TextView android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_alignLeft="@id/tv_editusereye_speed_title"
+					  android:layout_gravity="left"
+					  android:id="@+id/tv_editusereye_direction_title" 
+					  android:layout_below="@id/spinner_editusereye_speed"
+					  android:text="@string/editusereye_direction"
+					  style="@style/otherfunctionname"/>
+			    <EditText android:id="@+id/et_editusereye_direction"
+			          android:layout_width="wrap_content"
+				      android:layout_height="wrap_content"
+                      android:layout_alignLeft="@id/spinner_editusereye_speed"
+					  android:layout_alignRight="@id/spinner_editusereye_speed"
+					  android:layout_below="@id/tv_editusereye_direction_title"
+					  android:inputType="number"
+					  android:maxLength="3"/>
+				<Button 
+				      android:layout_width="100dip"
+					  android:layout_height="wrap_content"
+				      android:id="@+id/bt_editusereye_save"
+				      android:layout_centerHorizontal="true"
+				      android:layout_below="@id/et_editusereye_direction"
+				      android:text="@string/editpoiinfo_upload"/>
+  </RelativeLayout>
+</RelativeLayout>
+

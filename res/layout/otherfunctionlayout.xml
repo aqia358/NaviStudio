@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+	<include layout="@layout/searchlocationheader" 
+	    android:id="@+id/relativeLayout3_ref"
+		android:layout_height="wrap_content" 
+		android:layout_width="match_parent" />
+	<RelativeLayout android:layout_below="@id/relativeLayout3_ref"
+		android:id="@+id/lstRelativeLayout3" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:orientation="vertical">
+		<ListView android:layout_height="wrap_content"
+		android:id="@+id/lstviewotherfunctioneitem"
+		android:layout_width="match_parent" 
+		android:layout_alignParentLeft="true"
+		></ListView>
+	</RelativeLayout>
+</RelativeLayout>

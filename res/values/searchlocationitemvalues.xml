@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="searchlocitems">
+        <item>名称首字母查询</item>
+        <item>关键字查询</item>
+        <item>门址首字母查询</item>
+        <item>周边查询</item>
+        <item>我的收藏</item>
+        <item>历史目的地</item>
+        <item>回家</item>
+        <item>电子眼</item>
+    </string-array>
+</resources>

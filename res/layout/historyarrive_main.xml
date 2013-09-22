@@ -1,0 +1,15 @@
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+	android:background="#000000"
+	>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="50dip">
+			<include layout="@layout/common_menu_header" 
+				android:layout_height="wrap_content" 
+				android:layout_width="match_parent" />
+    </LinearLayout>
+	<ExpandableListView  android:layout_width="fill_parent" android:layout_height="fill_parent"
+						android:id="@+id/elv_historyarrive_list"
+						/>
+	
+</LinearLayout>

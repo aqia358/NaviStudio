@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+	<include layout="@layout/common_menu_header" android:id="@+id/relativeLayout1_ref"
+		android:layout_height="wrap_content" android:layout_width="match_parent" />
+	<RelativeLayout android:layout_below="@id/relativeLayout1_ref"
+		android:layout_alignParentLeft="true" android:id="@+id/relativeLayout1"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/common_search_bg">
+		<TableLayout android:id="@+id/tableLayout1"
+			android:layout_alignParentLeft="true" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TableRow android:id="@+id/tableRow1" android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<com.mapabc.android.activity.base.NextRoadView android:text="TextView" android:id="@+id/nrv_city_name"
+					android:textColor="@color/white" android:textSize="20dip"
+					android:layout_marginLeft="5dip"
+					
+									android:singleLine="true"
+									android:scrollHorizontally="true"
+									android:ellipsize="marquee"
+									android:marqueeRepeatLimit="marquee_forever"
+									android:focusable="true"
+									android:focusableInTouchMode="true"
+									android:freezesText="true"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_centerVertical="true"
+					></com.mapabc.android.activity.base.NextRoadView >
+			</TableRow>
+			<TableRow android:id="@+id/tableRow2" android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<AutoCompleteTextView android:id="@+id/actv_search_keyword"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="" android:layout_weight="1" 
+					android:hint="@string/search_enter_keyword" 
+					android:maxLength="50"
+					android:layout_centerVertical="true"
+					android:maxLines="1"
+					android:layout_marginLeft="5dip"/>
+				<ImageButton android:layout_toRightOf="@id/actv_search_keyword"
+					android:layout_width="wrap_content"
+					android:id="@+id/ib_search" android:layout_height="wrap_content"
+					android:background="@drawable/search_button_ani"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="2dip"></ImageButton>
+				<ImageButton android:layout_toRightOf="@id/ib_search"
+					android:layout_width="wrap_content"
+					android:id="@+id/ib_changeCity" android:layout_height="wrap_content"
+					android:background="@drawable/search_cityselect"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="5dip"></ImageButton>
+				<ImageButton android:layout_toRightOf="@id/ib_changeCity"
+					android:layout_width="wrap_content"
+					android:id="@+id/ib_voiceSearch" android:layout_height="wrap_content"
+					android:background="@drawable/search_voice"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="2dip"
+					android:visibility="gone"></ImageButton>
+				</RelativeLayout>
+			</TableRow>
+		</TableLayout>
+	</RelativeLayout>
+</RelativeLayout>

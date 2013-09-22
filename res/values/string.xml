@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 常用 -->
+    <string name="app_name">智能交通诱导系统</string>
+	<string name="common_confirm">确定</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_btn_negative">否</string>
+    <string name="common_btn_positive">是</string>
+    <string name="common_tip">提示</string>
+    <string name="common_nonetwork">没有可连接的网络,请检查...</string>
+    <string name="common_no_data">没有数据</string>
+    <string name="commmon_loading_data">数据搜索中,请稍候...</string>
+    <string name="common_total">共</string>
+    <string name="common_record">条</string>
+    <string name="common_result">搜索结果</string>
+    <!-- 专用 -->
+    <string name="navilogo_welcomevoice">欢迎使用智能交通诱导系统</string>
+    <string name="txtSearchResult">SearchResult</string>
+    <string name="navisplash_nosdcard_tip">SD卡未找到,程序将关闭!</string>
+    <string name="navisplash_disclaimer">敬告</string>
+    <string name="navisplash_disclaimer_content">1.本产品所计算的路径仅供参考，请不要据此作为您行驶的唯一依据，并请注意及时更新导航电子地图数据。\r\n2.在驾驶时请避免操作导航仪，以防发生危险。\r\n3.本软件在使用过程中，可能会产生网络流量费用，该费用由无线运营商收取，产生费用参看运营商的收费标准。\r\n4.因违反上述忠告而发生交通事故或遭受其他损失，本产品的开发、生成、销售者均不承担任何责任。</string>
+    <string name="navisplash_disclaimer_tip">下次启动时不再提示此对话框！</string>    
+    <string name="navisplash_refuse">拒绝</string>
+    <string name="navistudio_startGPSTitle">启用GPS</string>
+    <string name="navistudio_GPSTipMessage">GPS位置服务尚未启用，是否启用？</string>
+    <string name="navistudio_road_has_no_name">未知道路</string>
+    <string name="navilogo_txtLoading">载入中...</string>
+    <string name="navistudio_txtExit">退出</string>
+    <string name="navistudio_txtExitDesc">是否退出导航系统?</string>
+    <string name="menu_openTMC">打开实时路况</string>
+    <string name="menu_closeTMC">关闭实时路况</string>
+    <string name="menu_locationSearch">地点查找</string>
+    <string name="menu_routeManager">管理</string>
+    <string name="menu_more">更多...</string>
+    <string name="otherfunction_title">更多</string>
+    <string name="otherfunction_helpfile">/MapABC/Resource/syshelp.pdf</string>
+    <string name="aboutautonavi_group">中国导航电子地图AutoNavi系列</string>
+    <string name="aboutautonavi_name">AutoNavi®Mapabc®导航地理信息系统</string>
+    <string name="aboutautonavi_cpname">北京图盟科技有限公司编制</string>
+    <string name="aboutautonavi_shenTu">审图号：</string>
+    <string name="aboutautonavi_softnum">软件版本：v2.1.53_130609_release</string>
+    <string name="autonavisplashacticity_update_msg">有更高的版本（?）可以下载升级,数据大小为?MB，您是否需要下载最新程序？</string>
+    <string name="atuonavisplashactivity_getversion">正在检测新版本...</string>
+    <string name="autonavisplashacticity_getnewversion_failed">获取最新版本失败，原因：</string>
+    <string name="autonavisplashacticity_load_no_path">存储路径不正确！</string>
+    <string name="autonavisplashacticity_load_no_enough_storage">存储空间不足！</string>
+    <string name="autonavisplashacticity_load_no_net">网络异常！</string>
+    <string name="autonavisplashacticity_load_timeout">连接超时！</string>
+    <string name="autonavisplashacticity_load_ok">下载成功，安装文件下载路径：?，点确定，进行安装；点取消，进入导航系统。</string>
+    <string name="autonavisplashacticity_hasnoversioninfo">版本数据错误</string>
+    <string name="autonavisplashacticity_lastversioninfo">未检测到更新的软件版本！</string>
+    <string name="aboutautonavi_drivenum">引擎版本：</string>
+    <string name="aboutautonavi_datanum">数据版本：</string>
+    <string name="aboutautonavi_author">版权所有：(C)2007-2013高德软件有限公司保留所有权利</string>
+    <string name="aboutautonavi_desc">本光盘地图上的各级界限示意性表示，不作为划界依据。钓鱼岛、
+	赤尾屿及海南诸岛等中国岛屿已在地图数据库中表示。台湾省详细交通资料暂缺。
+	</string>
+	<string name="gpsinfo_title">GPS信息</string>
+    <string name="gpsinfo_badstate">无效定位</string>
+    <string name="gpsinfo_goodstate">有效定位</string>
+    <string name="gpsinfo_date">日期：</string>
+    <string name="gpsinfo_time">时间：</string>
+    <string name="gpsinfo_count">颗数：</string>
+    <string name="gpsinfo_direct">航向：</string>
+    <string name="gpsinfo_speed">速度：</string>
+    <string name="asyncforward_registe_tip">该设备未注册，请将MapABC目录下的文件“device.dat”发送给供货商，注册设备！</string>    
+    <string name="search_enter_keyword">请输入关键字</string>
+    <string name="search_enter_firstalpha">请输入首字母</string>
+    <string name="choosecity_topic">请选择城市</string>
+    <string name="searchpoiresult_distance">距离</string>
+    <string name="searchpoiresult_unit">公里</string>
+    <string name="searchpoiresult_unit_m">m</string>
+    <string name="searchpoiresult_unit_km">km</string>
+    <string-array name="distances">
+        <item>0.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>3</item>
+        <item>6</item>
+    </string-array>
+    <string name="searchpoiresult_location">查图</string>
+    <string name="searchpoiresult_del">删除</string>
+    <string name="searchpoiresult_edit">编辑</string>
+    <string name="searchpoiresult_fav">收藏</string>
+    <string name="searchpoiresult_startPoint">设起点</string>
+    <string name="searchpoiresult_endPoint">设终点</string>
+    <string name="searchpoiresult_strTel">电话：</string>
+    <string name="searchpoiresult_strAddr">地址：</string>
+    <string name="searchpoiresult_strArea">区域：</string>
+    <string name="searchpoibykeyword_app_id">500e1986</string>
+    <string name="navicontrol_no_gps_location">当前GPS未定位，是否计算路径 ？</string>
+    <string name="navicontrol_calculate_path">正在计算路径，请稍候...</string>
+    <string name="crossingview_calculate">偏航，路径重算当中</string>
+    <string name="crossingview_start_point">出发地</string>
+    <string name="crossingview_end_point">目的地</string>
+    <string name="crossingview_current_route">当前路段：</string>    
+    <string name="crossingview_remainder_route">剩余路段：</string>    
+        
+    <string name="favorite_full_tip">收藏夹已满，请及时清理多余数据！</string>
+    <string name="favorite_successfully">收藏成功</string>
+    <string name="favorite_successfail">收藏失败</string>
+    <string name="navicontrol_find_path_failed">路径计算失败</string>
+    <string name="navicontrol_not_find_path">未找到路径！</string>
+    <string name="navicontrol_recalculate_path">是否采用本地算路方式重新计算路径？</string>
+    <string name="navicontrol_select">请选择</string>
+    <string name="navicontrol_deletepath">删除路径</string>
+    <string name="navicontrol_navi">导航</string>
+    <string name="navicontrol_continue_route_failed">续航失败！</string>
+    <string name="sethome">已设置为家</string>
+    <string name="sethomefail">设置失败</string>
+    <string name="currentpoint_add_passpoint_fail">途经点已满</string>
+    <string name="currentpoint_add_avoidpoint_fail">避让点已满</string>
+    <string name="favorite_full_tip1">历史目的地收藏夹已满，请及时清理多余数据！</string>
+    <string name="roadname_null">道路名称为空，收藏失败！</string>
+    <string name="lonlat_null">位置不正确！</string>
+    <string name="trace_list">轨迹列表</string>
+    <string name="trace_list_delete_trace">您确定要删除该条轨迹吗？</string>
+    <string name="navistudioactivity_loadingrealtimetraffic">正在加载实时交通...</string>
+        
+        
+        
+    <string name="searcharound">周边查询</string>
+    <string name="searchresult_district">未知</string>
+    <string name="menu_deleteAll">清空</string>
+    <string name="myfavorites_delete_poi_message">您确定要全部删除吗？</string>
+    <string name="myfavorites_delete_success">数据已删除！</string>
+    <string name="myfavorites_delete_fail">删除失败！</string>
+    <string name="myfavorites_tip_message">是否删除该条记录？</string>
+    <string name="editpoiinfo_upload">提交</string>
+    <string name="editpoiinfo_topic">编辑点信息</string>
+    <string name="routemanager_delete_route">您确定要删除路径吗？</string>
+    <string name="navimaptouchlistener_noroadname">无名路</string>
+    <string name="routemanager_routeplan_tip">路线规划原则已改变，是否重新计算路径？</string>
+    <string name="searcharoundtype_topic">请选择类别</string>
+    <string name="navicontrol_overspeed">您已超速</string>
+     <string-array name="searcharound_type_icons">
+		<item>searcharound_type_1</item>
+		<item>searcharound_type_2</item>
+		<item>searcharound_type_3</item>
+		<item>searcharound_type_4</item>
+		<item>searcharound_type_5</item>
+		<item>searcharound_type_6</item>
+		<item>searcharound_type_7</item>
+		<item>searcharound_type_8</item>
+    </string-array>
+    <string-array name="search_icons">
+        <item>searchlocation_name_byfirstalpha</item>
+        <item>searchlocation_bykeyword</item>
+        <item>searchlocation_result_byfirstalpha</item>
+        <item>searchlocation_aroundpoi</item>
+        <item>searchlocation_myfavorites</item>
+        <item>searchlocation_historyarrive</item>
+        <item>searchlocation_gohome</item>
+        <item>searchlocation_usereye</item>
+    </string-array>
+    <string name="navicontrol_gpsfixed">GPS已定位</string>
+    <string name="navicontrol_hasnogps">GPS未定位</string>
+    <string name="editusereye_topic">编辑电子眼</string>
+    <string name="editusereye_name">名称：</string>
+    <string name="editusereye_type">类型：</string>
+    <string name="editusereye_direct">角度：</string>
+    <string name="editusereye_direction">距离正北顺时针角度：</string>
+    <string name="editusereye_speed">限速：</string>
+    <string name="addusereye_successfully">添加电子眼成功</string>
+    <string name="addusereye_successfail">添加电子眼失败</string>
+    <string name="currentpoint_addavoidline_failed">添加避让点失败</string>
+    <string name="currentpoint_addsamplepasspointtip">不能添加相同的途经点</string>
+    <string name="navicontrol_simnavistoped">本次导航结束</string>
+    <string name="editeusereye_angle_error_tip">角度信息错误</string>
+    <string name="trace_notrace">没有轨迹!</string>
+    <string name="searchlocationactivity_has_no_homepostion">您还没有设置家的位置</string>
+    <string name="choosecityactivity_select_taiwan">台湾目前不支持搜索功能，请见谅！</string>
+    <string name="navicontrol_startnavi">开始导航</string>
+    <string name="otherfunctionactivity_openpdffailed">未能正常打开，请检查是否安装了PDF浏览器</string>
+    <!-- *****************当前点********************* -->
+    <string name="currentpoint_set_home">设为家</string>
+    <string name="currentpoint_add_to_favorite">添加到收藏夹</string>
+    <string name="currentpoint_usereye">添加到电子眼</string>
+    <string name="currentpoint_tothis">到此地</string>
+    <string name="currentpoint_get_net_route">网络算路</string>
+    <string name="currentpoint_jingguothis">途径此地</string>
+    <string name="currentpoint_avoidpoint">避让此地</string>
+    <string name="currentpoint_fromthis">从这里出发</string>
+    <!-- *****************位置通模块********************* -->
+    <string name="wzt_no_data">没有数据</string>
+    <!--  添加语音导航模块  -->
+    <string name="open_realroadstatus">开启实时路况</string>
+    
+    <string name="close_realroadstatus">关闭实时路况</string>
+    <string name="car_meetcamera">你他妈有病啊！</string>
+    
+    
+    
+    
+    
+    
+     <string name="reset_tip">是否恢复出厂设置？</string>
+</resources>

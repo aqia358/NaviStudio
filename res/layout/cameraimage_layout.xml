@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/imagedisplaybox"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imagebg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/warningbannerclosebutton"
+        android:background="@drawable/cameraimage_bg" 
+        android:layout_marginRight="-8dp"/>
+    
+    <ImageButton
+        android:id="@+id/warningbannerclosebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="420dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/closebutton" 
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/imageframe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/warningbannerclosebutton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="125dp"
+        android:layout_alignRight="@+id/imagebg"
+        android:layout_alignBottom="@+id/imagebg"
+        android:background="@drawable/testimage" />
+
+</RelativeLayout>

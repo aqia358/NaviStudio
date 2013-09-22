@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+	<include layout="@layout/common_menu_header" android:id="@+id/relativeLayout1_ref"
+		android:layout_height="wrap_content" android:layout_width="match_parent" />
+	<RelativeLayout android:layout_below="@id/relativeLayout1_ref"
+		android:id="@+id/rl_searchlocation" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:orientation="vertical">
+		<ListView android:layout_height="wrap_content"
+			android:id="@+id/lv_searchlocation"
+			android:layout_width="match_parent" android:layout_alignParentLeft="true"
+			></ListView>
+	</RelativeLayout>
+</RelativeLayout>

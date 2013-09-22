@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<RelativeLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="55dip"
+			>
+			<ImageView android:layout_width="wrap_content"
+					  android:layout_height="55dip"
+					  android:layout_marginLeft="10dip"
+					  android:layout_centerVertical="true"
+					  android:id="@+id/iv_function_img" />
+			<TextView android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_toRightOf="@id/iv_function_img"
+					  android:layout_marginLeft="10dip"
+					  android:layout_centerVertical="true"
+					  android:id="@+id/tv_function_name" 
+					  style="@style/common_style_for_20dip"/>
+</RelativeLayout>

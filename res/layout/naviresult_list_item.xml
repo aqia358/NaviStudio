@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<RelativeLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="77dip"
+			>
+			<ImageView android:layout_width="wrap_content"
+					  android:layout_height="77dip"
+					  android:layout_marginLeft="10dip"
+					  android:layout_centerVertical="true"
+					  android:id="@+id/iv_settingforlike_image"/>
+			<TextView android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_toRightOf="@id/iv_settingforlike_image"
+					  android:layout_marginLeft="20dip"
+					  android:layout_centerVertical="true"
+					  android:id="@+id/tv_settingforlike_name" 
+					  style="@style/common_style_for_20dip"
+					  android:textSize="26dp"/>
+			<ImageView android:layout_width="wrap_content"
+			          android:layout_height="wrap_content"
+			          android:layout_alignParentRight="true" 
+					  android:layout_marginRight="10dip"
+					  android:layout_centerVertical="true"
+					  android:id="@+id/iv_settingforlike_image2"/>
+			<!--  
+			<ImageButton
+                    android:id="@+id/ib_main_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/iv_settingforlike_image2"
+					android:layout_marginRight="10dip"
+					android:layout_centerVertical="true"
+                    android:background="@drawable/main_search_button" />
+                    -->
+</RelativeLayout>

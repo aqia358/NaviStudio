@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_imgSplash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/navisplash_start_port" >
+    </ImageView>
+    <!--
+        ImageView android:layout_height="match_parent" android:scaleType="fitXY"
+		android:layout_width="match_parent" android:id="@+id/imgMask"
+		android:layout_gravity="center" android:tint="@color/color_gray"
+		></ImageView
+    -->
+
+</FrameLayout>

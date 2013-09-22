@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal"
+    android:background="@drawable/navistudio_tip_backgroup">
+    <ImageButton 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ib_search_around"
+        android:background="@drawable/navistudio_tip_search_around"
+        android:layout_margin="5dip"/>
+        
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_tip_road_name"
+        android:layout_margin="5dip"
+        android:layout_gravity="center_vertical"
+        android:text="测试"
+        android:textSize="16dip"/>
+    
+    <ImageButton 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ib_set_end_point"
+        android:background="@drawable/navistudio_tip_end_point"
+        android:layout_margin="5dip"/>
+</LinearLayout>
