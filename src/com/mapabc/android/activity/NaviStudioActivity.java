@@ -132,7 +132,7 @@ public class NaviStudioActivity extends BaseActivity {
 	private static TimerTask task;
 	private static Timer timer;
 	private GPSTool g = new GPSTool();
-	public int delay = 20;
+	public int delay = 0;
 	
 	/*
 	 * 处理其他对象或者线程发送过来的消息
@@ -189,19 +189,23 @@ public class NaviStudioActivity extends BaseActivity {
 					}else{
 						if(displayWarningOrNot){
 							getAroundCarsPositionAndDraw();
-//							displayWarningOrNot = false;
+							delay = 2;
+							g.list.clear();
 						}
 //							hideWarningWindow();
 					}
 				}else{
-					Log.i("receive gps", "----safe----");
+					if(delay > 0){
+						delay --;
+						getAroundCarsPositionAndDraw();
+					}else{
+						if(displayWarningOrNot){
+							delay = 0;
+							hideWarningWindow();	
+							displayWarningOrNot = false;
+						}
+					}
 				}
-//				else {
-//					if(displayWarningOrNot){
-//						hideWarningWindow();
-//						displayWarningOrNot = false;
-//					}
-//				}
 				break;
 			default:
 				break;
@@ -1224,6 +1228,7 @@ public class NaviStudioActivity extends BaseActivity {
 				}else{
 					if(left1 == 120){
 						if(displayWarningOrNot){
+							delay = 0;
 							g.list.clear();
 							Log.e("receive gps", "解除危险"+g.list.size());
 							hideWarningWindow();	

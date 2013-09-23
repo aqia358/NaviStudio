@@ -53,21 +53,15 @@ public class GPSTool {
 	 * rev eaqual send
 	 */
 	public boolean isEqual(byte[] a, byte[] b){
-		boolean flag = true;
-		for(int i = 0;i < 3; i++){
-			if(a[i] != b[i])
-				flag = flag && false;
-		}
-		return flag;
+		return (a[2] == b[2])&&(a[3] == b[3]);
 	}
 	/**
 	 * 判断是否有危险
 	 * @return boolean
 	 */
 	public boolean isDangerous(){
-		Log.i("receive gps","I am in isDangerous");
-		sendGPS();//发送gps数据给路测节点
-//		sendGPSToRoad();//发送gps数据给路测节点
+//		sendGPS();//发送gps数据给路测节点
+		simulationGPSData();
 		readZigBee();//收路测发来其他车辆的GPS数据（包括车速）
 		Log.i("receive gps", "list size is "+list.size());
 		if(list.size()>0){
@@ -76,6 +70,18 @@ public class GPSTool {
 			Log.e("receive gps", "be safe");
 		}
 		return list.size()>0;
+	}
+	/**
+	 * 假数据
+	 */
+	public void simulationGPSData(){
+		sendGpsBuf[0] = (byte) 0xfe;// System.out.println(sendGpsBuf[0]);
+		sendGpsBuf[1] = 21;// System.out.println(sendGpsBuf[1]);
+		sendGpsBuf[2] = 17;
+		sendGpsBuf[3] = 17;
+		int n = HardwareControler.write(serial_fd_4, sendGpsBuf); // 车载发送到zigbee
+		if(n>0)
+			Log.e("receive gps", "send success");
 	}
 	/**
 	 * read ZIG Bee
@@ -93,7 +99,9 @@ public class GPSTool {
 				if (HardwareControler.read(serial_fd_4, revBuf,revBuf.length) == 0)break;
 				Log.e("receive gps", hexString(revBuf)+"|");
 				if(revBuf[0] == -2){//FE
-					if(!isEqual(this.revBuf,this.sendGpsBuf)){
+					if(isEqual(this.revBuf,this.sendGpsBuf)){
+						Log.i("receive gps", "receive yourself info");
+					}else{
 						curtime = (revBuf[4] << 24 & 0xff000000 | revBuf[5] << 16 & 0xff0000 | revBuf[6] << 8 & 0xff00 | revBuf[7] & 0xff);
 						latitude = (revBuf[8] << 24 & 0xff000000 | revBuf[9] << 16 & 0xff0000 | revBuf[10] << 8 & 0xff00 | revBuf[11] & 0xff);
 						longitude = (revBuf[12] << 24 & 0xff000000 | revBuf[13] << 16 & 0xff0000 | revBuf[14] << 8 & 0xff00 | revBuf[15] & 0xff);
@@ -101,8 +109,6 @@ public class GPSTool {
 						GPSDATA g = new GPSDATA(curtime, latitude, longitude, speed);
 						list.add(g);
 						Log.e("receive gps", "a car in dangerous");
-					}else{
-						Log.i("receive gps", "receive same msg");
 					}
 				}else if(revBuf[0] == 0xfb){//FB
 					Log.e("rev msg", hexString(revBuf));
@@ -113,7 +119,6 @@ public class GPSTool {
 	public void sendGPS(){
 		String GPSString = new String();
 		int n = 0;
-		int count = 0;
 		int selectResult = 0;
 		selectResult = HardwareControler.select(serial_fd, 0, 0);
 		Log.e("gps result", selectResult+"");
@@ -153,9 +158,9 @@ public class GPSTool {
 				int speed = Float.floatToIntBits(gpsdata.speed);
 
 				sendGpsBuf[0] = (byte) 0xfe;// System.out.println(sendGpsBuf[0]);
-				sendGpsBuf[1] = 17;// System.out.println(sendGpsBuf[1]);
-				sendGpsBuf[2] = 0;
-				sendGpsBuf[3] = 1;
+				sendGpsBuf[1] = 21;// System.out.println(sendGpsBuf[1]);
+				sendGpsBuf[2] = 17;
+				sendGpsBuf[3] = 17;
 				sendGpsBuf[4] = (byte) (currentTime >> 24 & 0xff);
 				sendGpsBuf[5] = (byte) (currentTime >> 16 & 0xff);
 				sendGpsBuf[6] = (byte) (currentTime >> 8 & 0xff);
